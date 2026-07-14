@@ -2,9 +2,9 @@
 
 **Question:** Does the new landing page increase signup conversion?
 
-**Design:** 3,835 users per arm, randomized 50/50, powered to detect a 2pp lift.
+**Design:** 1,769 users per arm, randomized 50/50, powered to detect a 2pp lift.
 
-**Result:** Treatment converted at 11.9% vs control 10.2% —
-a lift of +1.7% (95% CI [+0.3%, +3.1%], p=0.0178).
+**Result:** Treatment converted at 12.3% vs control 10.3% —
+a lift of +1.9% (95% CI [-0.2%, +4.0%], p=0.0711).
 
-**Recommendation:** SHIP: statistically significant improvement.
+**Recommendation:** DO NOT SHIP yet: result not significant.
