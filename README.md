@@ -14,3 +14,15 @@ Outputs a full experiment report to stdout and `results_memo.md`.
 - SRM (sample-ratio mismatch) check before reading results
 - Two-proportion z-test + confidence interval for the lift
 - Business translation: "what should we ship, and how sure are we?"
+
+## Sample output
+
+Required sample size: 3,835 per arm (baseline 10%, MDE 2%, power 0.8)
+SRM check p=1.000 (OK)
+
+Control: 10.169%   Treatment: 11.864%
+Lift: +1.69%  (95% CI [+0.29%, +3.10%])  z=2.37  p=0.0178
+
+**Decision: SHIP — statistically significant improvement.** The confidence
+interval excludes zero, and the SRM check confirms randomization was healthy
+before reading any results.
