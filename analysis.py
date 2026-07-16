@@ -7,7 +7,7 @@ from statsmodels.stats.proportion import proportion_effectsize, proportions_ztes
 rng = np.random.default_rng(42)
 
 # ---- 1. Design: how many users do we need? ----
-BASELINE, MDE = 0.10, 0.03          # 10% conversion, want to detect +2pp
+BASELINE, MDE = 0.10, 0.02          # 10% conversion, want to detect +2pp
 effect = proportion_effectsize(BASELINE + MDE, BASELINE)
 n_per_arm = int(np.ceil(NormalIndPower().solve_power(effect, alpha=0.05, power=0.8)))
 print(f"Required sample size: {n_per_arm:,} per arm "
